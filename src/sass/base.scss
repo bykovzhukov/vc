@@ -1,0 +1,64 @@
+.body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: $c-brand;
+
+  &.is-feed {
+    background-color: transparent;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content__test {
+  width: 1060px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .is-feed & {
+    width: 640px;
+  }
+}
+
+.btn {
+  height: 56px;
+  padding: 0 38px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 54px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 15px 22px rgba(121,54,68,.2);
+  cursor: pointer;
+  transition: transform 150ms linear, box-shadow 150ms linear;
+
+  &:hover {
+    transform: scale(.98);
+    box-shadow: 0 10px 16px rgba(75,34,43,.2);
+  }
+}
+
+.switch {
+  position: absolute;
+  z-index: 99;
+  top: 20px;
+  left: 20px;
+  user-select: none;
+}
